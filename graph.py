@@ -53,7 +53,7 @@ class Graph:
         self.drawXAxis()
         
         self.toggleVariable("egco2")
-        self.toggleVariable("sweep")
+        self.toggleVariable("tSweep")
         self.toggleVariable("tegco2")
     
     def drawXAxis(self):

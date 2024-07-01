@@ -6,7 +6,7 @@ from terminal import *
 from variables import *
 from graph import *
 from logger import *
-##from serial import Serial
+
 
 class Master:
     def __init__(self, comPort):
