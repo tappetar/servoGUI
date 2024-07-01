@@ -28,7 +28,7 @@ self.addVariable("tegco2","RW")
 
 # servoWearable only
 #self.addVariable("suggestSweep", "R", 0, 10000)
-self.addVariable("tSweep", "R", 0, 10000)
+self.addVariable("tSweep", "RW", 0, 10000)
 self.addVariable("tPressure", "R", 0, 10000)
 #self.addVariable("sweep", "R", 0, 10000)
 #self.addVariable("flow", "R", 0, 10)
