@@ -25,6 +25,7 @@ class Variable:
         self.labelRead.config(text = str(val))
         
     def send(self):
+        print("TEST")
         sendVal = self.textWrite.get("1.0",END).strip()
         print("sendVal:", sendVal)
         if sendVal.isdigit():
@@ -105,5 +106,10 @@ class VariableManager:
             else:
                 self.incomingString = self.incomingString + char
         
+# def send():
+#     message = message_entry.get()
+#     if message:
+#         client_socket.send(message.encode())
+#         message_entry.delete(0, tk.END)
         
         

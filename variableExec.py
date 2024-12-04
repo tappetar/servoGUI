@@ -16,10 +16,10 @@ Yea, we'll probably have to properly integrate it for release.
 
 # sensor module    
 self.addVariable("egco2","R")
-self.addVariable("pressureChamber","R")
-self.addVariable("humidity","R")
-self.addVariable("temp","R")
-self.addVariable("tTemp","RW")
+#self.addVariable("pressureChamber","R")
+#self.addVariable("humidity","R")
+#self.addVariable("temp","R")
+#self.addVariable("tTemp","RW")
 # self.addVariable("heaterPWM","R") # declutter interface
 # self.addVariable("pumpPWM","R") # declutter interface
 
@@ -29,12 +29,16 @@ self.addVariable("tegco2","RW")
 # servoWearable only
 #self.addVariable("suggestSweep", "R", 0, 10000)
 self.addVariable("tSweep", "RW", 0, 10000)
-self.addVariable("tPressure", "R", 0, 10000)
+#self.addVariable("tPressure", "R", 0, 10000)
 #self.addVariable("sweep", "R", 0, 10000)
 #self.addVariable("flow", "R", 0, 10)
 self.addVariable("sweepP", "RW", 0, 10000)
 self.addVariable("sweepI", "RW", 0, 10000)
 self.addVariable("sweepD", "RW", 0, 10000)
+self.addVariable("sweepE", "RW", 0, 10000)
+self.addVariable("loops", "R", 0, 10000)
+self.addVariable("elapsed", "RW", 0, 10000)
+self.addVariable("altEgco2", "RW", 0, 10000)
 #self.addVariable("pressureInput", "R")
 #self.addVariable("systemVersion", "R")
 #self.addVariable("pressureCorrectedEGCO2", "R")
