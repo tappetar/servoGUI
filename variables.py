@@ -93,9 +93,9 @@ class VariableManager:
             if (char=="["):
                 self.incomingString = ""
             elif (char=="]"):
-                print("Got Msg: ["+self.incomingString+"]")
+                # print("Got Msg: ["+self.incomingString+"]") #laggy
                 incomingStringSplit = self.incomingString.split("=")
-                print(incomingStringSplit)
+                # print(incomingStringSplit) # reduce lag
                 if (len(incomingStringSplit) == 2):
                     name = incomingStringSplit[0]
                     val = incomingStringSplit[1]
